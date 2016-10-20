@@ -1,0 +1,19 @@
+<a href="http://localhost:3000/rock/">Play Rock</a>
+<a href="http://localhost:3000/paper/">Play Paper</a>
+<a href="http://localhost:3000/scissors/">Play Scissors</a>
+
+<h1>YOU PLAYED PAPER!!!</h1>
+
+<img src="http://localhost:3000/assets/images/paper.png" width="200" alt="" />
+
+
+
+<p>
+  The computer played <%= @computer_move %>
+</p>
+
+<img src= <%= @computer_img_url %> width = "200" alt="" />
+
+<% if @computer_move == "paper" %>
+  <h3>You tied!</h3>
+<% end %>
